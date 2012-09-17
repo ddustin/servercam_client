@@ -1,0 +1,217 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58D8921916069827001E1B2F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58D8921816069827001E1B2F /* main.cpp */; };
+		58D8921B16069827001E1B2F /* ServerCam.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 58D8921A16069827001E1B2F /* ServerCam.1 */; };
+		58D89223160699A9001E1B2F /* LogParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58D89222160699A9001E1B2F /* LogParser.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58D8921216069827001E1B2F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				58D8921B16069827001E1B2F /* ServerCam.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		58D8921416069827001E1B2F /* ServerCam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ServerCam; sourceTree = BUILT_PRODUCTS_DIR; };
+		58D8921816069827001E1B2F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		58D8921A16069827001E1B2F /* ServerCam.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ServerCam.1; sourceTree = "<group>"; };
+		58D892211606999F001E1B2F /* LogParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogParser.h; sourceTree = "<group>"; };
+		58D89222160699A9001E1B2F /* LogParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogParser.cpp; sourceTree = "<group>"; };
+		58D892361606D2D6001E1B2F /* utmp_local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utmp_local.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58D8921116069827001E1B2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58D8920916069827001E1B2F = {
+			isa = PBXGroup;
+			children = (
+				58D8921716069827001E1B2F /* ServerCam */,
+				58D8921516069827001E1B2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58D8921516069827001E1B2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58D8921416069827001E1B2F /* ServerCam */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58D8921716069827001E1B2F /* ServerCam */ = {
+			isa = PBXGroup;
+			children = (
+				58D8921816069827001E1B2F /* main.cpp */,
+				58D8921A16069827001E1B2F /* ServerCam.1 */,
+				58D892211606999F001E1B2F /* LogParser.h */,
+				58D89222160699A9001E1B2F /* LogParser.cpp */,
+				58D892361606D2D6001E1B2F /* utmp_local.h */,
+			);
+			path = ServerCam;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58D8921316069827001E1B2F /* ServerCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58D8921E16069827001E1B2F /* Build configuration list for PBXNativeTarget "ServerCam" */;
+			buildPhases = (
+				58D8921016069827001E1B2F /* Sources */,
+				58D8921116069827001E1B2F /* Frameworks */,
+				58D8921216069827001E1B2F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServerCam;
+			productName = ServerCam;
+			productReference = 58D8921416069827001E1B2F /* ServerCam */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58D8920B16069827001E1B2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Dusty Technologies";
+			};
+			buildConfigurationList = 58D8920E16069827001E1B2F /* Build configuration list for PBXProject "ServerCam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58D8920916069827001E1B2F;
+			productRefGroup = 58D8921516069827001E1B2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58D8921316069827001E1B2F /* ServerCam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58D8921016069827001E1B2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D8921916069827001E1B2F /* main.cpp in Sources */,
+				58D89223160699A9001E1B2F /* LogParser.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58D8921C16069827001E1B2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		58D8921D16069827001E1B2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		58D8921F16069827001E1B2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58D8922016069827001E1B2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58D8920E16069827001E1B2F /* Build configuration list for PBXProject "ServerCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58D8921C16069827001E1B2F /* Debug */,
+				58D8921D16069827001E1B2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58D8921E16069827001E1B2F /* Build configuration list for PBXNativeTarget "ServerCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58D8921F16069827001E1B2F /* Debug */,
+				58D8922016069827001E1B2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58D8920B16069827001E1B2F /* Project object */;
+}
