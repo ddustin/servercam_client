@@ -8,6 +8,7 @@
 
 #include "LogParser.h"
 #include "utmp_local.h"
+#include <string.h>
 #include <assert.h>
 #include <sstream>
 #include <sys/socket.h>

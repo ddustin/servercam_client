@@ -10,3 +10,5 @@
 *.lai
 *.la
 *.a
+
+/ServerCam.xcodeproj/project.xcworkspace/xcuserdata/ddustin.xcuserdatad/UserInterfaceState.xcuserstate
