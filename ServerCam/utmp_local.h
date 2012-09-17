@@ -9,6 +9,8 @@
 #ifndef ServerCam_utmp_local_h
 #define ServerCam_utmp_local_h
 
+#include <stdint.h>
+
 #define FAKE_UTMP_STRUCT 0
 
 #ifndef FAKE_UTMP_STRUCT
