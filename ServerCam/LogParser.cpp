@@ -68,10 +68,5 @@ bool LogParser::parseOne(istream &in)
     
     data["login_ip_address"].assign(utmp.ut_host, strnlen(utmp.ut_host, sizeof(utmp.ut_host)));
     
-    if(data["user_name"] == "ddustin") {
-        
-        cout << "Whats up with ddustin.\n";
-    }
-    
     return true;
 }
