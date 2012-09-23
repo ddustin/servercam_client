@@ -68,5 +68,12 @@ bool LogParser::parseOne(istream &in)
     
     data["user_ip_address"].assign(utmp.ut_host, strnlen(utmp.ut_host, sizeof(utmp.ut_host)));
     
+    if(logParserType == LogParserTypeLogin)
+        data["record_type"] = "login";
+    else if(logParserType == LogParserTypeSshLogin)
+        data["record_type"] = "login";
+    else if(logParserType == LogParserTypeLogout)
+        data["record_type"] = "logout";
+    
     return true;
 }
