@@ -66,7 +66,7 @@ bool LogParser::parseOne(istream &in)
     data["user_name"].assign(utmp.ut_user, strnlen(utmp.ut_user, sizeof(utmp.ut_user)));
     data["time_stamp"] = toString(utmp.ut_tv.tv_sec);
     
-    data["login_ip_address"].assign(utmp.ut_host, strnlen(utmp.ut_host, sizeof(utmp.ut_host)));
+    data["user_ip_address"].assign(utmp.ut_host, strnlen(utmp.ut_host, sizeof(utmp.ut_host)));
     
     return true;
 }
