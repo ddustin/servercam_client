@@ -9,6 +9,7 @@
 #include <iostream>
 #include <fstream>
 #include "LogParser.h"
+#include "Json.h"
 using namespace std;
 
 int main(int argc, const char * argv[])
@@ -42,19 +43,7 @@ int main(int argc, const char * argv[])
             if(logParser.logParserType != LogParserTypeLogout)
                 continue;
         
-        cout << "{\n";
-        
-        for(LogParser::Data::iterator itr = logParser.data.begin(); itr != logParser.data.end(); ++itr) {
-            
-            cout << "\"" << itr->first << "\": \"" << itr->second << "\"";
-            
-            if(++LogParser::Data::iterator(itr) != logParser.data.end())
-                cout << ",";
-            
-            cout << endl;
-        }
-        
-        cout << "}\n\n";
+        cout << Json::toJson(logParser.data) << "\n\n";
     }
     
     return 0;

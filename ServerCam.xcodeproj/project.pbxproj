@@ -10,6 +10,7 @@
 		58D8921916069827001E1B2F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58D8921816069827001E1B2F /* main.cpp */; };
 		58D8921B16069827001E1B2F /* ServerCam.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 58D8921A16069827001E1B2F /* ServerCam.1 */; };
 		58D89223160699A9001E1B2F /* LogParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58D89222160699A9001E1B2F /* LogParser.cpp */; };
+		58E4B5C7160E94700079AC83 /* Json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58E4B5C6160E94700079AC83 /* Json.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,10 +29,12 @@
 /* Begin PBXFileReference section */
 		58D8921416069827001E1B2F /* ServerCam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ServerCam; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D8921816069827001E1B2F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		58D8921A16069827001E1B2F /* ServerCam.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ServerCam.1; sourceTree = "<group>"; };
+		58D8921A16069827001E1B2F /* ServerCam.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = ServerCam.1; path = ServerCam/ServerCam.1; sourceTree = "<group>"; };
 		58D892211606999F001E1B2F /* LogParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogParser.h; sourceTree = "<group>"; };
 		58D89222160699A9001E1B2F /* LogParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogParser.cpp; sourceTree = "<group>"; };
 		58D892361606D2D6001E1B2F /* utmp_local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utmp_local.h; sourceTree = "<group>"; };
+		58E4B5C5160E93B50079AC83 /* Json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Json.h; sourceTree = "<group>"; };
+		58E4B5C6160E94700079AC83 /* Json.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Json.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 		58D8920916069827001E1B2F = {
 			isa = PBXGroup;
 			children = (
+				58E4B5C2160E93600079AC83 /* SupportingFiles */,
 				58D8921716069827001E1B2F /* ServerCam */,
 				58D8921516069827001E1B2F /* Products */,
 			);
@@ -64,13 +68,54 @@
 		58D8921716069827001E1B2F /* ServerCam */ = {
 			isa = PBXGroup;
 			children = (
-				58D8921816069827001E1B2F /* main.cpp */,
-				58D8921A16069827001E1B2F /* ServerCam.1 */,
-				58D892211606999F001E1B2F /* LogParser.h */,
-				58D89222160699A9001E1B2F /* LogParser.cpp */,
-				58D892361606D2D6001E1B2F /* utmp_local.h */,
+				58E4B5BE160E934B0079AC83 /* Json */,
+				58E4B5C3160E93690079AC83 /* main */,
+				58E4B5BC160E93450079AC83 /* LogParser */,
+				58E4B5C4160E93710079AC83 /* utmp_local */,
 			);
 			path = ServerCam;
+			sourceTree = "<group>";
+		};
+		58E4B5BC160E93450079AC83 /* LogParser */ = {
+			isa = PBXGroup;
+			children = (
+				58D892211606999F001E1B2F /* LogParser.h */,
+				58D89222160699A9001E1B2F /* LogParser.cpp */,
+			);
+			name = LogParser;
+			sourceTree = "<group>";
+		};
+		58E4B5BE160E934B0079AC83 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				58E4B5C5160E93B50079AC83 /* Json.h */,
+				58E4B5C6160E94700079AC83 /* Json.cpp */,
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
+		58E4B5C2160E93600079AC83 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				58D8921A16069827001E1B2F /* ServerCam.1 */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		58E4B5C3160E93690079AC83 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				58D8921816069827001E1B2F /* main.cpp */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		58E4B5C4160E93710079AC83 /* utmp_local */ = {
+			isa = PBXGroup;
+			children = (
+				58D892361606D2D6001E1B2F /* utmp_local.h */,
+			);
+			name = utmp_local;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +171,7 @@
 			files = (
 				58D8921916069827001E1B2F /* main.cpp in Sources */,
 				58D89223160699A9001E1B2F /* LogParser.cpp in Sources */,
+				58E4B5C7160E94700079AC83 /* Json.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
