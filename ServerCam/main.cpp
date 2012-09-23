@@ -10,7 +10,11 @@
 #include <fstream>
 #include "LogParser.h"
 #include "Json.h"
+
+extern "C" {
 #include <curl/curl.h>
+}
+
 #include <cstring>
 #include <assert.h>
 using namespace std;
